@@ -3,6 +3,97 @@
   --secondary: red;
 }
 
+body {}
+
+/* 1rem=16px */
+h1 {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 3.25rem;
+  line-height: 4rem;
+}
+
+h2 {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 3rem;
+
+}
+
+h3 {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+
+}
+
+h4 {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 4rem;
+
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 4rem;
+
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 4rem;
+
+}
+li{
+  list-style: none;
+}
+
+.link {}
+
+.item{
+  font-family: 'Ubuntu', sans-serif;
+
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn--primary {}
+
+.btn--secondary {}
+
+p {
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+p.big {
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+}
+
 @media (min-width: 640px) {}
 
 @media (min-width: 768px) {}

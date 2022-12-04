@@ -1,3 +1,2 @@
-import {gsap} from 'gsap'
-import { example } from "./ui";
-
+import { gsap } from 'gsap';
+import { example } from './ui';
