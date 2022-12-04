@@ -2,21 +2,23 @@
 
 :root {
 
-  --primary-50: blue;
-  --primary-300: blue;
-  --primary: blue;
-  --primary-700: blue;
-  --primary-900: blue;
+  --primary-50: #f6f5fe;
+  --primary-300: #b5b1f9;
+  --primary: #473bf0;
+  --primary-700: #352cb4;
+  --primary-900: #231d76;
   
-  --secondary-50: lightgreen;
-  --secondary-300: lightgreen;
-  --secondary: lightgreen;
-  --secondary-700: lightgreen;
-  --secondary-900: lightgreen;
+  --secondary-50: #fef6f8;
+  --secondary-300: #f9b5c5;
+  --secondary: #ef476f;
+  --secondary-700: #b33553;
+  --secondary-900: #752336;
+
+  --black: #000500;
 }
-
-body {}
-
+body {
+  margin: 0;
+}
 /* 1rem=16px */
 h1 {
 
@@ -24,6 +26,7 @@ h1 {
   font-weight: 500;
   font-size: 3.25rem;
   line-height: 4rem;
+  color: var(--primary);
 }
 
 h2 {
@@ -32,6 +35,7 @@ h2 {
   font-weight: 500;
   font-size: 2.25rem;
   line-height: 3rem;
+  color: var(--black);
 
 }
 
@@ -41,6 +45,7 @@ h3 {
   font-weight: 500;
   font-size: 1.75rem;
   line-height: 2.5rem;
+  color: var(--primary);
 
 }
 
@@ -95,16 +100,21 @@ li{
 }
 
 .btn--primary {
-  
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
   width: 200px;
-  /* color: ; */
+  color: var(--primary-50);
   background: var(--primary);
   padding: 1rem 1.5rem
 }
 
 .btn--secondary {
+  font-size: 1.25rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
   width: 200px;
-  /* color: ; */
+  color: var(--secondary-50);
   background: var(--secondary);
   padding: 1rem 1.5rem
 
@@ -116,10 +126,13 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
+
+  color: var(--black);
 }
 
 p.big {
 
+  color: var(--black);
   font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
   line-height: 2.25rem;
@@ -148,16 +161,17 @@ p.big {
 
 
 body > * {
-  margin-left:  15px;
-  margin-right:  15px;
+  padding-left:  15px;
+  padding-right:  15px;
 
 }
 header{
   display: flex;
   height: 85vh;
   flex-wrap: wrap;
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 120px;
+  background-color: var(--primary-50);
 }
 
 .about{
@@ -169,19 +183,35 @@ header{
 }
 .cta{
   margin-bottom: 100px;
+  height: 60vh;
+  display: grid;
+  place-items: center;
+}
+.cta__text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.solutions__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 footer{
-
-  margin-bottom: 50px;
+  background: var(--secondary-300);
+  padding-bottom: 50px;
   margin-top: 50px;
 
 }
 
 @media (min-width: 768px) {
   body > * {
-    margin-left: 80px;
-    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   footer {
     display: grid;
@@ -192,8 +222,8 @@ footer{
 
 @media (min-width: 1024px) {
   body > * {
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
 
 }
