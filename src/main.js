@@ -1,9 +1,13 @@
-import { gsap } from 'gsap';
-import { example } from './ui';
+import { getProjects } from './api'
 
-const getProjects = () => {
-    const projects = []
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-    return project
-}
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from('.techs h2', {
+    scrollTrigger: '.techs h2',
+    duration: 3,
+    x: '100px'
+})
 
